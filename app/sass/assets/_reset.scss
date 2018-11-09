@@ -1,0 +1,21 @@
+@import 'assets/vars';
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: $primeryBackground;
+	display: flex;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #000;
+}
+
+h1 {
+	color: $white;
+}
