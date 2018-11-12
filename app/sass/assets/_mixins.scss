@@ -2,5 +2,29 @@
 	font-size: 32px;
 	color: red;
 	margin: 20px;
-	background: yellow;
+	background: yellow; 
+}
+
+@mixin decor-icon {
+	background: #f4f4f4;
+	border-radius: 50%;
+	color: #91969f;
+	display: block;
+	font-size: 14px;
+	height: 40px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+  width: 40px;  
+}
+
+@mixin signal-number {
+	position: absolute;
+  top: -5px;
+  right: -7px;
+  border-radius: 50%;
+  color: #ffffff;
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 18px
 }

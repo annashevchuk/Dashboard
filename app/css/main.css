@@ -1,40 +1,178 @@
+body,
 html {
+  background-color: #f8f8f8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial;
+  height: 100%;
   margin: 0;
   padding: 0;
+  width: 100%; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+.aside {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+  max-width: 300px;
   height: 100%;
+  width: 100%;
+  padding: 0 0 0 40px;
+  -webkit-transition: 0.5;
+  -o-transition: 0.5;
+  transition: 0.5; }
+  .aside__list {
+    padding: 0 5px 0 0; }
+  .aside__link {
+    display: block;
+    padding: 15px;
+    border-left: 5px solid transparent;
+    -webkit-transition: all easy-out 0.3s;
+    -o-transition: all easy-out 0.3s;
+    transition: all easy-out 0.3s;
+    color: #76797e; }
+    .aside__link:hover {
+      background: #f8f8f8;
+      /*border-left: 5px solid $blue;*/ }
+    .aside__link i {
+      margin-right: 10px; }
+  .aside_active {
+    width: 100%;
+    overflow: hidden;
+    color: transparent; }
+    .aside_active a {
+      white-space: nowrap;
+      color: transparent; }
+      .aside_active a i {
+        color: #76797e; }
+
+.wrapper {
+  height: 100%; }
+
+.contant {
+  height: -webkit-calc(100%-95px);
+  height: calc(100%-95px); }
+
+.header {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 20px 40px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+.logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
+  .logo img {
+    margin-right: 35px; }
+  .logo .hamburger {
+    border: none;
+    background-color: #fff;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #9a9fa7; }
 
-ul {
-  list-style-type: none; }
-
-a {
-  color: #000; }
-
-h1 {
-  color: #ffffff; }
-
-.header {
-  padding: 20px 15px; }
-
-.nav ul {
+.right-side {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: center;
-      -ms-flex-direction: center;
-          flex-direction: center; }
-  .nav ul li {
-    color: #ffffff; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06); }
 
-h1 {
-  font-size: 32px;
-  color: red;
-  margin: 20px;
-  background: yellow; }
+.search-part {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+  color: #9a9fa7; }
+  .search-part .search-icon {
+    font-size: 12px;
+    margin-right: 10px;
+    padding-top: 2px; }
+  .search-part .input-search {
+    border: none;
+    font-size: 14px; }
+
+.profile {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .profile .signal-icons {
+    border-left: 1px solid #e5e8ee;
+    border-right: 1px solid #e5e8ee;
+    padding: 7px 30px;
+    margin: auto; }
+  .profile .messenger,
+  .profile .bell {
+    display: inline-block; }
+
+.icon {
+  background: #f4f4f4;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #91969f;
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: 40px; }
+  .icon .fas {
+    margin: 13px 0; }
+  .icon span {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    color: #ffffff;
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: 18px; }
+
+.bell span {
+  background: #ff7473; }
+
+.messenger {
+  margin-right: 20px; }
+  .messenger span {
+    background: #1585ff; }
+
+.profile_photo {
+  border: 2px solid #b0cff6;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 40px;
+  overflow: hidden; }

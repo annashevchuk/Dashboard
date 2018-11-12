@@ -1,21 +1,9 @@
-@import 'assets/reset';
 @import 'assets/vars';
+@import 'assets/reset';
 @import 'assets/mixins';
+@import 'assets/aside';
+@import 'assets/base';
+@import 'assets/header';
 
-.header {
-	padding: 20px 15px;
-}
 
-.nav {
-	ul {
-		display: flex;
-		flex-direction: center;
-		li {
-			color: $white;
-		}
-	}
-}
 
-h1 {
-	@include title;
-}

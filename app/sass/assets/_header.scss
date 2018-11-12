@@ -1,0 +1,99 @@
+.header {
+	align-items: center;
+	background-color: #fff;
+	display: flex;
+	margin: 0;
+	padding: 20px 40px;
+	justify-content: space-between;
+	width: 100%;	
+}
+
+.logo {
+		display: flex;
+	
+		img {
+			margin-right: 35px;
+		}
+
+		.hamburger {
+			border: none;
+			background-color: #fff;
+			margin-left: 30px;
+			margin-top: 15px;
+			color: $lggrey;
+		}
+  }
+
+.right-side{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+}
+
+.search-part {
+	display: flex;
+	margin: auto 0;
+	color: $lggrey;
+
+		.search-icon {
+		font-size: 12px;
+		margin-right: 10px;
+		padding-top: 2px;
+	}
+
+	.input-search {
+		border: none;
+		font-size: 14px;
+	  }
+}
+
+.profile {
+	display: flex;
+
+		.signal-icons {
+		border-left: 1px solid #e5e8ee;
+		border-right: 1px solid #e5e8ee;
+		padding: 7px 30px;
+		margin: auto;
+	}
+
+		.messenger,
+		.bell {
+			display: inline-block;
+		}
+}
+
+.icon {
+	@include decor-icon;
+
+		.fas {
+			margin: 13px 0;
+		}
+
+		span {
+			@include signal-number;
+		}
+}
+
+.bell {
+	span {
+		background: #ff7473;
+	}
+}
+
+.messenger {
+	margin-right: 20px;
+		span {
+	  	background: #1585ff;
+	  }
+}
+
+.profile_photo {
+	border: 2px solid #b0cff6;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin: 0 40px;
+	overflow: hidden;
+}
