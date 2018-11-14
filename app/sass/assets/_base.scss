@@ -1,7 +1,9 @@
 .wrapper {
+	color: $primaryColor;
 	height: 100%;
 }
 
-.contant {
-	height: calc(100%-95px);
+.main {
+	display: flex;
+	height: calc(100% - 20px);
 }

@@ -1,6 +1,5 @@
-body,
-html {
-	background-color: $primeryBackground;
+html,
+body {
 	box-sizing: border-box;
 	font-family: Arial;
 	height: 100%;	
@@ -11,12 +10,11 @@ html {
 
 ul {
 	list-style-type: none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 a {
-	color: #000;
+	color: $primaryColor;
 	text-decoration: none;
 }
-

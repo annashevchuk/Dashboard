@@ -1,0 +1,90 @@
+.main-content__header {
+	box-sizing: border-box;
+	background-color: #ffffff;
+	padding: 40px 35px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+	 .profile-inf {
+	 	h3 {
+			color: $darcktextColor;
+	 	}
+	}
+
+	.line {
+		display: inline-block;
+		width: 1px;
+		height: 14px;
+		border-right: 1px solid $darcktextColor;
+		margin: 0 14px;
+	}
+	
+	.statistic {
+		display: flex;
+	}
+
+	.incom,
+	.trafic {
+		display: flex;
+
+		&__info {
+			span {
+				display: block;
+				margin-right: 15px;
+			}
+		}
+		&__price {
+			color: $primaryBlue;
+			font-size: 18px;
+		}
+	}
+
+	.incom-col,
+	.trafic-col {
+		background-color: #979fad;
+		width: 4px;
+		margin-right: 4px;
+		height: 8px;
+	}
+
+	.statistic__diagram {
+		display: flex;
+		.col-1 {
+			height: 15px;
+		}
+		.col-2 {
+			height: 12px;
+		}
+		.col-3 {
+			height: 8px;
+		}
+		.col-4 {
+			height: 10px;
+		}
+		.col-5 {
+			height: 30px;
+			background-color: #ff7473;
+		}
+		.col-6 {
+			height: 16px;
+		}
+		.col-7 {
+			height: 22px;
+		}
+		.col-8 {
+			height: 28px;
+		}
+		.col-9 {
+			height: 38px;
+		}
+		.col-10 {
+			height: 20px;
+		}
+	}
+
+	
+
+
+}

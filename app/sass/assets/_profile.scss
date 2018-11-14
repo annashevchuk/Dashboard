@@ -3,6 +3,8 @@
 	padding: 35px;
 	&__content {
 		background-color: #fff;
+		border-radius: 5px;
+		color: #999da5;
 		padding: 35px;
 		width: calc(66% - 30px);
 		margin-right: 30px;
@@ -13,4 +15,6 @@
 		padding: 35px;
 		width: 34%;
 	}
+
+
 }
