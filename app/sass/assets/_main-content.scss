@@ -1,0 +1,44 @@
+.main-content {
+	background-color: #f8f8f8;
+	width: 100%;	
+}
+
+.section {
+	.title-story {
+		color: #a9acb3;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-bottom: 25px;
+	}	
+}
+
+.today {
+
+	&__items {
+		display: flex;
+
+	}
+
+	&__signal {
+		width: 16px;
+		height: 16px;
+		border-radius: 50px;
+		border: 3px solid $greenBorder;
+		background-color: $green;
+
+	}
+
+	&__text-list {
+
+	}
+
+}
+
+
+
+
+
+
+
+
+

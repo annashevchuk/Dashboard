@@ -1,21 +1,18 @@
-@import 'assets/reset';
 @import 'assets/vars';
+
+//bootsrap import
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/nav';
+
+
+
+@import 'assets/reset';
 @import 'assets/mixins';
-
-.header {
-	padding: 20px 15px;
-}
-
-.nav {
-	ul {
-		display: flex;
-		flex-direction: center;
-		li {
-			color: $white;
-		}
-	}
-}
-
-h1 {
-	@include title;
-}
+@import 'assets/base';
+@import 'assets/header';
+@import 'assets/aside';
+@import 'assets/main-content';
+@import 'assets/profile';
+@import 'assets/main-header';

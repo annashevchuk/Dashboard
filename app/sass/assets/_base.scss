@@ -1,0 +1,9 @@
+.wrapper {
+	color: $primaryColor;
+	height: 100%;
+}
+
+.main {
+	display: flex;
+	height: calc(100% - 20px);
+}

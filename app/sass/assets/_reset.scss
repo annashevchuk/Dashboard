@@ -1,21 +1,20 @@
-@import 'assets/vars';
-
-html {
+html,
+body {
+	box-sizing: border-box;
+	font-family: Arial;
+	height: 100%;	
 	margin: 0;
-	padding: 0;
-	height: 100%;
-	background-color: $primeryBackground;
-	display: flex;
+	padding: 0;	
+	width: 100%;	
 }
 
 ul {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-	color: #000;
-}
-
-h1 {
-	color: $white;
+	color: $primaryColor;
+	text-decoration: none;
 }
