@@ -2,14 +2,18 @@
 	box-sizing: border-box;
 	background-color: #ffffff;
 	padding: 40px 35px;
-	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.04);;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 
-	 .profile-inf {
+	 .profile-main-inf {
 	 	h3 {
 			color: $darcktextColor;
+	 	}
+	 	a:hover {
+	 		font-size: 18px;
+	 		font-weight: bold;
 	 	}
 	}
 
@@ -23,6 +27,10 @@
 	
 	.statistic {
 		display: flex;
+		margin: auto;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding-top: 18.72px;
 	}
 
 	.incom,
@@ -47,6 +55,14 @@
 		width: 4px;
 		margin-right: 4px;
 		height: 8px;
+	}
+
+	.incom-col:hover {
+		background-color: #ff7473;
+	}
+
+	.trafic-col:hover {
+		background-color: $primaryBlue;
 	}
 
 	.statistic__diagram {
@@ -83,6 +99,10 @@
 		.col-10 {
 			height: 20px;
 		}
+	}
+
+	.incom {
+		margin-right: 80px;
 	}
 
 	

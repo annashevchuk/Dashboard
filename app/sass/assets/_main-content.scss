@@ -1,71 +1,95 @@
 .main-content {
-	background-color: #f8f8f8;
+	background-color: $primeryBackground;
 	width: 100%;	
 }
 
+/*begin tab header*/
+.history {
+	height: 80px;
+	text-align: center;
+	border-bottom: 3px solid $primeryBackground;
+
+	&__item {
+		height: 100%;
+			a {
+				height: 80%;
+				color: #999da5;
+				line-height: 60px;
+			}
+	 }
+
+	&__item:first-child {
+		margin-left: 35px;
+	}
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+	border-top: 3px solid $primaryBlue;
+	border-radius: 0;
+	background-color: #f2f4f7;
+	color: $primaryBlue;
+}
+/*end header tabs*/
+
 .section {
+	padding: 0 35px;
 	.title-story {
 		color: #a9acb3;
 		font-size: 12px;
-		padding-top: 10px;
+		padding-top: 10px; 
 		margin-bottom: 25px;
 	}	
 }
 
-.today {
+.section {
 	&__signal {
-		min-width: 16px;
-		height: 16px;
+		position: absolute;
+    top: -4px;
+    left: -7px;
+		min-width: 10px;
+		height: 10px;
 		border-radius: 50px;
 		border: 3px solid $greenBorder;
-		background-color: $green;
-		
-		&:after {
-			content: "";
-			width: 2px;
-			height: 60px;
-			background-color: #eceff3;
-			display: block;
-			position: absolute;
-			left: 10px;
-			right: 0;
-			top: 22px;				
-		}
-	}
-
-	&__text-list {
-
+		background-color: $green;	
 	}
 
 	&__list-item {
-		display: flex;
 		position: relative;
+
 		 .text-content {
-		 		padding-left: 20px;
-		 		margin-bottom: 15px;
+		 		padding: 0 0 25px 20px;
+		 		border-left: 2px solid #eceff3;
 		 		p {
 		 			color: #76797e;
 		 			font-size: 14px;
 		 			margin-top: 0;
 		 		}
+		 	.news-photo {
+		 		display: flex;
+		 	}
 		 }
 	}
 }
 
-		 .signal_blue {
-			border: 3px solid $blueBorder;
-			background-color: $blue;
-				&:after {
-					height: 120px;
-				}
-		}
+.list-item__photo {
+	width: 100%;
+	margin: 0 10px 15px 0;
+		
+}
 
-		.signal-last {
-				&:after {
-					height: 0;
-				}
+.signal_blue {
+	border: 3px solid $blueBorder;
+	background-color: $blue;
+		&:after {
+			height: 120px;
 		}
+}
+
+.signal-last {
+	&:after {
+		height: 0;
 	}
+}
 
 .text-block {
 	padding: 15px 20px 0 15px;
@@ -77,8 +101,9 @@
 }
 
 
+.nav-link active {
+	
 }
-
 
 
 
