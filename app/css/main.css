@@ -53,7 +53,7 @@
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #886aef; }
+  background-color: #007bff; }
 
 .nav-fill .nav-item {
   -webkit-box-flex: 1;
@@ -77,6 +77,90 @@
 
 .tab-content > .active {
   display: block; }
+
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+  opacity: 0; }
+  .tooltip.show {
+    opacity: 0.9; }
+  .tooltip .arrow {
+    position: absolute;
+    display: block;
+    width: 0.8rem;
+    height: 0.4rem; }
+    .tooltip .arrow::before {
+      position: absolute;
+      content: "";
+      border-color: transparent;
+      border-style: solid; }
+
+.bs-tooltip-top, .bs-tooltip-auto[x-placement^="top"] {
+  padding: 0.4rem 0; }
+  .bs-tooltip-top .arrow, .bs-tooltip-auto[x-placement^="top"] .arrow {
+    bottom: 0; }
+    .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+      top: 0;
+      border-width: 0.4rem 0.4rem 0;
+      border-top-color: #000; }
+
+.bs-tooltip-right, .bs-tooltip-auto[x-placement^="right"] {
+  padding: 0 0.4rem; }
+  .bs-tooltip-right .arrow, .bs-tooltip-auto[x-placement^="right"] .arrow {
+    left: 0;
+    width: 0.4rem;
+    height: 0.8rem; }
+    .bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
+      right: 0;
+      border-width: 0.4rem 0.4rem 0.4rem 0;
+      border-right-color: #000; }
+
+.bs-tooltip-bottom, .bs-tooltip-auto[x-placement^="bottom"] {
+  padding: 0.4rem 0; }
+  .bs-tooltip-bottom .arrow, .bs-tooltip-auto[x-placement^="bottom"] .arrow {
+    top: 0; }
+    .bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+      bottom: 0;
+      border-width: 0 0.4rem 0.4rem;
+      border-bottom-color: #000; }
+
+.bs-tooltip-left, .bs-tooltip-auto[x-placement^="left"] {
+  padding: 0 0.4rem; }
+  .bs-tooltip-left .arrow, .bs-tooltip-auto[x-placement^="left"] .arrow {
+    right: 0;
+    width: 0.4rem;
+    height: 0.8rem; }
+    .bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
+      left: 0;
+      border-width: 0.4rem 0 0.4rem 0.4rem;
+      border-left-color: #000; }
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  -webkit-border-radius: 0.25rem;
+          border-radius: 0.25rem; }
 
 html,
 body {
@@ -302,7 +386,8 @@ a {
   .history__item:first-child {
     margin-left: 35px; }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
   border-top: 3px solid #1585ff;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -317,45 +402,49 @@ a {
     font-size: 12px;
     padding-top: 10px;
     margin-bottom: 25px; }
-
-.section__signal {
-  position: absolute;
-  top: -4px;
-  left: -7px;
-  min-width: 10px;
-  height: 10px;
-  -webkit-border-radius: 50px;
-          border-radius: 50px;
-  border: 3px solid #c0f0c4;
-  background-color: #0ac51b; }
-
-.section__list-item {
-  position: relative; }
-  .section__list-item .text-content {
-    padding: 0 0 25px 20px;
-    border-left: 2px solid #eceff3; }
-    .section__list-item .text-content p {
-      color: #76797e;
-      font-size: 14px;
-      margin-top: 0; }
-    .section__list-item .text-content .news-photo {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
+  .section__signal {
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    min-width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    border: 3px solid #c0f0c4;
+    background-color: #0ac51b; }
+  .section__list-item {
+    position: relative; }
+    .section__list-item .text-content {
+      padding: 0 0 25px 20px;
+      border-left: 2px solid #eceff3; }
+      .section__list-item .text-content p {
+        color: #76797e;
+        font-size: 14px;
+        margin-top: 0; }
+      .section__list-item .text-content .news-photo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        overflow: hidden; }
+    .section__list-item .text-last {
+      border-left: none; }
 
 .list-item__photo {
   width: 100%;
   margin: 0 10px 15px 0; }
 
-.signal_blue {
+.signal_violet {
   border: 3px solid #e0d8fb;
   background-color: #886aef; }
-  .signal_blue:after {
-    height: 120px; }
 
-.signal-last:after {
-  height: 0; }
+.signal_blue {
+  border: 3px solid #c2dfff;
+  background-color: #1585ff; }
 
 .text-block {
   padding: 15px 20px 0 15px;
@@ -371,7 +460,8 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 35px; }
+  padding: 35px;
+  background-color: #f8f8f8; }
   .profile__content {
     background-color: #fff;
     -webkit-border-radius: 5px;
@@ -406,7 +496,8 @@ a {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  /*tooltips*/ }
   .main-content__header .profile-main-inf h3 {
     color: #1d2025; }
   .main-content__header .profile-main-inf a:hover {
@@ -483,3 +574,5 @@ a {
       height: 20px; }
   .main-content__header .incom {
     margin-right: 80px; }
+  .main-content__header .tooltip > .tooltip-inner {
+    background-color: #ff7473; }
