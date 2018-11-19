@@ -12,11 +12,15 @@
 	}
 
 	&__sidebar {
-		background-color: #fff;
-		padding: 35px;
 		width: 34%;
+	}
+
+	&__sidebar-section {
+		background-color: #fff;
 		box-shadow: 0px 2px 20px 1px rgba(151,159,173,1);
 		border-radius: 5px;
+		padding: 35px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -58,6 +62,7 @@
 		box-shadow: 0px 3px 27px 0px rgba(151, 159, 173, 0.75);
 		cursor: pointer;
 	  }
+
 	  .follow {
 	  	color: $primaryBlue;
 	  	border: 1px solid #c3dffd;
@@ -79,11 +84,21 @@
 		}
 }
 
-
-
+.stars {
+	display: flex;
+	color: #ffbc0a;
+}
 
 .prof-inf-footer {
 	text-align: center;
 	color: #999da5;
 	font-size: 14px;
+}
+
+.payment {
+	li {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
 }

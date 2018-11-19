@@ -473,13 +473,15 @@ a {
     -webkit-box-shadow: 0px 2px 20px 1px #979fad;
             box-shadow: 0px 2px 20px 1px #979fad; }
   .profile__sidebar {
+    width: 34%; }
+  .profile__sidebar-section {
     background-color: #fff;
-    padding: 35px;
-    width: 34%;
     -webkit-box-shadow: 0px 2px 20px 1px #979fad;
             box-shadow: 0px 2px 20px 1px #979fad;
     -webkit-border-radius: 5px;
-            border-radius: 5px; }
+            border-radius: 5px;
+    padding: 35px;
+    margin-bottom: 60px; }
 
 .prof-item {
   padding-bottom: 35px;
@@ -541,10 +543,28 @@ a {
   .rating span {
     display: block; }
 
+.stars {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffbc0a; }
+
 .prof-inf-footer {
   text-align: center;
   color: #999da5;
   font-size: 14px; }
+
+.payment li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px; }
 
 .main-content__header {
   -webkit-box-sizing: border-box;
