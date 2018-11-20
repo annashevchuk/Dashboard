@@ -99,18 +99,35 @@
 		.col-10 {
 			height: 20px;
 		}
+		.col-5-blue {
+			background-color: $primaryBlue;
+		}
 	}
 
 	.incom {
 		margin-right: 80px;
 	}
+}
 
-	/*tooltips*/
-	.tooltip > .tooltip-inner {
-		background-color: #ff7473;
+/*tooltips*/
+	.tooltip.red {
+		.tooltip-inner {
+			background-color: #ff7473;
+		}
+		.arrow {
+			&:before {
+			border-top-color: #ff7473;
+	   	}
+		}
 	}
 
-	
-
-
-}
+	.tooltip.blue {
+		.tooltip-inner {
+			background-color: $primaryBlue;
+		}
+		.arrow {
+			&:before {
+			border-top-color: $primaryBlue;
+	   	}
+		}
+	}
