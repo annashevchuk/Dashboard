@@ -22,6 +22,11 @@
 		padding: 35px;
 		margin-bottom: 60px;
 	}
+
+	@media (max-width: $large) {
+		flex-direction: wrap;
+		flex-direction: column-reverse;
+	}
 }
 
 .prof-item {
@@ -56,22 +61,29 @@
 	display: flex;
 	justify-content: space-around;
 		button {
-		min-width: 170px;
-		padding: 20px 10px;
-		border-radius: 50px;
-		box-shadow: 0px 3px 27px 0px rgba(151, 159, 173, 0.75);
-		cursor: pointer;
+			border: none;	
+			padding: 20px 10px;
+			border-radius: 50px;
+			box-shadow: 0px 3px 27px 0px rgba(151, 159, 173, 0.75);
+			width: 170px;
+				a {
+				cursor: pointer;
+			  }
 	  }
 
 	  .follow {
-	  	color: $primaryBlue;
 	  	border: 1px solid #c3dffd;
 	  	background-color: #fff;
+	  	margin-right: 20px;
+				a {
+					color: $primaryBlue;
+				}
 	  }
 	  .edit {
-	  	color: #fff;
 	  	background-color: $primaryBlue;
-	  	border: none;
+	  	a {
+	  	color: #fff;	
+	   }
 	  }
 }
 
@@ -87,6 +99,37 @@
 .stars {
 	display: flex;
 	color: #ffbc0a;
+	margin: 8px 0 15px 0;
+}
+
+.revews {
+	.number {
+		margin-bottom: 12px;
+		font-weight: 600;
+		font-size: 22px;
+		color: #1d2025;
+	}
+}
+
+.media {
+	width: 36px;
+	height: 38px;
+	border-radius: 3px;
+		img {
+			display: block;
+			margin: auto;
+			padding-top: 12px;
+		}
+
+}
+.cloud {
+	background-color: $primaryBlue;
+	margin-bottom: 35px;
+}
+
+.intern {
+	background-color: #0ac51b;
+
 }
 
 .prof-inf-footer {
